@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stopwatch web Application</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="box">
+        <h2 class="heading">Stopwatch</h2>
+        <h1 id="startimes">00 : 00 : 00 </h1>
+        <button onclick ="start()" style="background-color: green;">Start</button>
+        <button onclick ="stop()" style="background-color: red;">Stop</button>
+        <button onclick="reset()"  style="background-color: blue;">Restart</button>
+
+    </div>
+    <script src="jscript.js"></script>
 </body>
 </html>
