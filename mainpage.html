@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stopwatch web Application</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 <body>
+    
     <div class="box">
         <h2 class="heading">Stopwatch</h2>
-        <h1 id="startimes">00 : 00 : 00 </h1>
-        <button onclick ="start()" style="background-color: green;">Start</button>
-        <button onclick ="stop()" style="background-color: red;">Stop</button>
-        <button onclick="reset()"  style="background-color: blue;">Restart</button>
+        <div id="startimes"><h1 >00 : 00 : 00 : 00</h1></div>
+        
+    <div class="contant1">
+        <button class="s1" onclick ="start()" style="background-color: rgb(88, 255, 88);"><span class="material-symbols-outlined"> keyboard_arrow_right </span></button>
+        <button class="s2" onclick ="stop()" style="background-color: rgb(255, 65, 65);"><span class="material-symbols-outlined"> timer_off </span></button>
+        <button class="s3" onclick="reset()"  style="background-color: rgb(73, 73, 255);"><span class="material-symbols-outlined"> restart_alt</span></button>
+        <button class="s4" onclick="recordLap()"  style="background-color: rgb(195, 195, 201);"><span class="material-symbols-outlined"> flag  </span></button>
+       
+    </div>
+    <div id="lapList" class="lapList"></div>
 
     </div>
+
     <script src="jscript.js"></script>
 </body>
 </html>

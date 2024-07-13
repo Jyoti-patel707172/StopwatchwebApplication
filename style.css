@@ -2,6 +2,7 @@
 {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     
 }
 
@@ -9,26 +10,32 @@ body {
     background-image: url("B.jpg");
     background-color: #cccccc; 
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
+    height: 80vh;
+    width: 50vh;
     background-size: cover;
     background-position: center;
+    
 
 
 }
   
   
 .box{
-    background-color:#e2ea4aef;
-    height: fit-content;
-    width: fit-content;
+    margin: 100px 0px 0px 900px;
+    background-color:#000000;
+    height: 500px;
+    width: 500px;
     font-family: cursive;
     box-sizing: border-box;
+    border: #cccccc solid 2px;
+    border-radius: 60px;
 }
 
 .heading{
-    color: black;
+    color: white;
     text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
 }
 .h1{
     font-size: 50px;
@@ -40,8 +47,50 @@ button{
     padding: 15px;
     border-radius: 5px;
     margin: 15px;
+    height: 60px;
+    width: 70px;
     color: rgb(203, 191, 170);
     cursor: pointer;
+}
+    button :active{
+        background-color: wheat;
+    }
+span{
+    color: black;
 
+}
+button span {
+    margin-left: 5px;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+.contant1{
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
     
+#startimes{
+    text-align: center;
+    background-color: rgb(251, 255, 255);
+    margin: 10px 100px 0px 100px;
+    border: #cccccc solid 2px;
+    border-radius: 50px;
+    
+}
+.heading{
+font-size: xx-large;
+text-transform: uppercase;
+}
+.lapList {
+    overflow-y: auto;
+    max-height: 200px;
+    margin: 20px 20px 0px 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: #1f1c1c solid 2px;
+    border-radius: 10px;
 }
